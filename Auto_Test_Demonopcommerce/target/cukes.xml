@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="609.999">
+    <testcase classname="registration user should be able to sign up with new accounts" name="user could sign up with valid data" time="79.852">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press registration link............................................passed
+When user fills Personal Details with valid data and password...............passed
+And user press on register button...........................................passed
+Then user register successfully.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="user should be able to login to the system" name="user login with valid username and password" time="29.256">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="change his/her password successfully" name="user can change his/her password successfully" time="39.547">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user click on forget password link.....................................passed
+And user fills Email correctly..............................................passed
+Then user click on recover button...........................................passed
+And user will see successfully message Email with instructions has been sent to you.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="search for any item by item's name" name="user can search for any item by item's name" time="52.993">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+Given user navigate to home page............................................passed
+When user press on search field.............................................passed
+And user search with Item name"book"........................................passed
+And user press on search button.............................................passed
+Then user could find relative result........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="switch between currencies US-Euro" name="User could switch between currencies US-Euro" time="62.984">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+Given user navigate to home page............................................passed
+When user click on the currency list........................................passed
+And user change currency to Euro............................................passed
+Then user found all items prices in Euro....................................passed
+When user click on the currency list........................................passed
+And user change currency to us-dollar.......................................passed
+Then user found all items prices in us-dollar...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="hover in categories and subcategories" name="user can hover in categories and subcategories and click in subcategory" time="65.395">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+Given user navigate to home page............................................passed
+When user hover in categories...............................................passed
+And user hover in subcategories and click in one............................passed
+Then user navigate to subcategory page......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="filter with color" name="user could filter with color" time="55.069">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+Given user navigate to home page............................................passed
+And user hover in categories................................................passed
+And user hover in subcategories and click in one............................passed
+And user navigate to subcategory page.......................................passed
+When user choose the filteration color......................................passed
+Then user found all items in the choosen color..............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="select different tags" name="user could select different tags" time="34.399">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+Given user navigate to home page............................................passed
+And user hover in categories................................................passed
+And user hover in subcategories and click in one............................passed
+When user could select item with Tag........................................passed
+Then user navigate to Tag page..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="add different products to Shopping cart" name="user could add different products to Shopping cart" time="46.913">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Given user could add items to shoppingCart..................................passed
+When user go to Shopping cart...............................................passed
+Then user found the chosen items in shoppingCart............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="add items to wishlist" name="user could add items to wishlist" time="34.328">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Then user could login successfully and go to home page......................passed
+Given user press wishlist button on specific item...........................passed
+When user click on wishlist link............................................passed
+And user count numbers of quantities........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="items to compare list" name="user add items to compare list" time="35.185">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Given user could add items to compare list..................................passed
+When user go to compare list................................................passed
+Then user found the chosen items in compare list............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="make successful Order" name="user make successful Order" time="73.248">
+        <system-out>
+            <![CDATA[Given user navigate to home page............................................passed
+And user press login link...................................................passed
+When user enter valid Email and password....................................passed
+And user click on login button..............................................passed
+Given user could add items to shoppingCart..................................passed
+When user go to Shopping cart...............................................passed
+Then user found the chosen items in shoppingCart............................passed
+When user click on Terms and condition checkbox.............................passed
+And user click on checkout button...........................................passed
+Then user complete order confirmation process...............................passed
+And user finally complete order and see "Your order has been successfully processed!".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
